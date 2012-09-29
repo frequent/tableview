@@ -55,117 +55,117 @@ The following attributes can be set on the table:
 
 <TABLE cellspacing="2" border="0">
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">Init</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Init</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none]</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none]</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">table</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">table</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">data-role="tableview"</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">data-role="tableview"</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">Tell tableview to enhance the table.</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Tell tableview to enhance the table.</td>
 	</tr>
 </TABLE>
 
 #### 1) Wrapper/Grids/Slot-Machine ####
 <TABLE cellspacing="2" border="0">
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">topContainer/bottomContainer </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">topContainer/bottomContainer </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">NULL</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">NULL</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[plugin option] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[plugin option] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">You can specify elements that should server as top and bottom wrappers. If they are not specified, tableview will create wrappers automatically and use JQM grid to add 3 slots in each wrapper, giving you a total of 6 slots to add custom button elements to the table.  </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">You can specify elements that should server as top and bottom wrappers. If they are not specified, tableview will create wrappers automatically and use JQM grid to add 3 slots in each wrapper, giving you a total of 6 slots to add custom button elements to the table.  </td>
 	</tr>
 </TABLE>
 
 <TABLE cellspacing="2" border="0">
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">bottom/topContainerGrid</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">bottom/topContainerGrid</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">3</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">3</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[plugin option] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[plugin option] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">You can set the number of grids to use in the wrappers. 1,2 or 3 grids are possible. By default tableview creates 3 grid layouts.</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">You can set the number of grids to use in the wrappers. 1,2 or 3 grids are possible. By default tableview creates 3 grid layouts.</td>
 	</tr>
 </TABLE> 
 
 <TABLE cellspacing="2" border="0">
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">Fill slots (1)</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Fill slots (1)</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none]</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none]</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">any div element</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">any div element</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">data-slot="true"</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">data-slot="true"</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">Use this attribute to label an element to be added to a slot on the table top and bottom wrapper grid. Top grid has slots 1 (left), 2 (middle), 3 (right) by default. Bottom wrapper has slots 4 (left), 5 (middle) and 6 (right) by default.</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Use this attribute to label an element to be added to a slot on the table top and bottom wrapper grid. Top grid has slots 1 (left), 2 (middle), 3 (right) by default. Bottom wrapper has slots 4 (left), 5 (middle) and 6 (right) by default.</td>
 	</tr>
 </TABLE>
 
 <TABLE cellspacing="2" border="0">
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">Fill Slots (2)</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Fill Slots (2)</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none]</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none]</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">any div element</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">any div element</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">data-slot-id="1|2|3|4|5|6"</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">data-slot-id="1|2|3|4|5|6"</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">This tells the plugin in which slot the element should be dropped.</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">This tells the plugin in which slot the element should be dropped.</td>
 	</tr>
 </TABLE>
 
@@ -173,116 +173,116 @@ The following attributes can be set on the table:
 
 <TABLE cellspacing="2" border="0">
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">toggleMenu</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">toggleMenu</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">popup</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">popup</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[plugin option] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[plugin option] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none]</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none]</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">The plugin adds a toggle menu, which users can use to manually hide/show columns of a table. All columns except persist columns can be toggled. The menu can either be a JQM popup or a native select element.</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">The plugin adds a toggle menu, which users can use to manually hide/show columns of a table. All columns except persist columns can be toggled. The menu can either be a JQM popup or a native select element.</td>
 	</tr>
 </TABLE>
 
 <TABLE cellspacing="2" border="0">
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">toggleCueText</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">toggleCueText</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">hide/show columns</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">hide/show columns</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[plugin option] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[plugin option] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">The text to display on the column toggle popup button, select element</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">The text to display on the column toggle popup button, select element</td>
 	</tr>
 </TABLE>
  
 <TABLE cellspacing="2" border="0">
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">toggleSlot</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">toggleSlot</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">3</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">3</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[plugin option] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[plugin option] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">The default slot into which the toggle menu will be dropped</td>
-	</tr>
-</TABLE>
-
-<TABLE cellspacing="2" border="0">
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">toggleIcon</td>
-	</tr>
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">gear</td>
-	</tr>
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[plugin option] </td>
-	</tr>
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none] </td>
-	</tr>
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">The default icon for the toggle menu</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">The default slot into which the toggle menu will be dropped</td>
 	</tr>
 </TABLE>
 
 <TABLE cellspacing="2" border="0">
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">toggleIconPos</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">toggleIcon</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">left</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">gear</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[plugin option] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[plugin option] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">Default icon position.</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">The default icon for the toggle menu</td>
+	</tr>
+</TABLE>
+
+<TABLE cellspacing="2" border="0">
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">toggleIconPos</td>
+	</tr>
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">left</td>
+	</tr>
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[plugin option] </td>
+	</tr>
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none] </td>
+	</tr>
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Default icon position.</td>
 	</tr>
 </TABLE>
 
@@ -290,93 +290,93 @@ The following attributes can be set on the table:
 
 <TABLE cellspacing="2" border="0">
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">headerTheme </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">headerTheme </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">c</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">c</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[plugin option] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[plugin option] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">Theme to use for the table header cells.</td>
-	</tr>
-</TABLE>
-
-<TABLE cellspacing="2" border="0">
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">wrapperTheme</td>
-	</tr>
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">a</td>
-	</tr>
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[plugin option] </td>
-	</tr>
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none] </td>
-	</tr>
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">Theme to be used for table top and bottom wrappers.</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Theme to use for the table header cells.</td>
 	</tr>
 </TABLE>
 
 <TABLE cellspacing="2" border="0">
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">oddTheme</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">wrapperTheme</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">c</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">a</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[plugin option] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[plugin option] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">Theme to use for odd rows</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Theme to be used for table top and bottom wrappers.</td>
 	</tr>
 </TABLE>
 
 <TABLE cellspacing="2" border="0">
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">evenTheme</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">oddTheme</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">d</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">c</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[plugin option] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[plugin option] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none] </td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none] </td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">Theme to use for even rows</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Theme to use for odd rows</td>
+	</tr>
+</TABLE>
+
+<TABLE cellspacing="2" border="0">
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">evenTheme</td>
+	</tr>
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">d</td>
+	</tr>
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[plugin option] </td>
+	</tr>
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none] </td>
+	</tr>
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Theme to use for even rows</td>
 	</tr>
 </TABLE>
 
@@ -384,116 +384,116 @@ The following attributes can be set on the table:
 
 <TABLE cellspacing="2" border="0">
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">Embedded Selects</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Embedded Selects</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none]</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none]</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">table</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">table</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">data-embedded-selects="true"</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">data-embedded-selects="true"</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">Use this attribute, if your elements should be embedded into the wrappers vs. being regular buttons/select elemens. Embedding stretches to available width/height, removes all shadows, corners and borders.</td>
-	</tr>
-</TABLE>
-
-<TABLE cellspacing="2" border="0">
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">Inset</td>
-	</tr>
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none]</td>
-	</tr>
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">table</td>
-	</tr>
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">data-inset="true"</td>
-	</tr>
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">Add 15px margin and round borders to the table. Without it, the table will stretch full screen width.</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Use this attribute, if your elements should be embedded into the wrappers vs. being regular buttons/select elemens. Embedding stretches to available width/height, removes all shadows, corners and borders.</td>
 	</tr>
 </TABLE>
 
 <TABLE cellspacing="2" border="0">
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">Checkers</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Inset</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none]</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none]</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">table</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">table</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">data-selectable="true"</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">data-inset="true"</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">If you want to have your rows selectable (visually!), you can add this attribute to the table. The plugin will add a persistent column with icon only checkboxes. In the header a select all/unselect all checkbox will be added. You will need to add the underlying logic, but the visuals are all set by tableview.</td>
-	</tr>
-</TABLE>
-
-<TABLE cellspacing="2" border="0">
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">Sortables/td>
-	</tr>
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none]</td>
-	</tr>
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">table header cells (THEAD TH)</td>
-	</tr>
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">data-sortable="true"</td>
-	</tr>
-	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">This turns a column header into a sortable button (visually - no sorting function). Buttons are embedded and use the arrow up/down icons. You will need to add the logic to sort yourself.</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Add 15px margin and round borders to the table. Without it, the table will stretch full screen width.</td>
 	</tr>
 </TABLE>
 
 <TABLE cellspacing="2" border="0">
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Config:</td>
-		<td width="70%"style="text-align: left; font-size: 14px; vertical-align:top;">Filter</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Checkers</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Default value:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">[none]</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none]</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Declare On:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">table</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">table</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Attribute: </td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">data-filter="true"</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">data-selectable="true"</td>
 	</tr>
 	<tr>
-		<td width="30%" style="text-align: left; font-size: 14px; vertical-align:top;">Info:</td>
-		<td width="70%" style="text-align: left; font-size: 14px; vertical-align:top;">>Same as in JQM listview. This extension adds a filter element to filter all visible records. Note: The filter will be added in slot 2, so don't put anything there, if you want to use the filter.</td>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">If you want to have your rows selectable (visually!), you can add this attribute to the table. The plugin will add a persistent column with icon only checkboxes. In the header a select all/unselect all checkbox will be added. You will need to add the underlying logic, but the visuals are all set by tableview.</td>
+	</tr>
+</TABLE>
+
+<TABLE cellspacing="2" border="0">
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Sortables/td>
+	</tr>
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none]</td>
+	</tr>
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">table header cells (THEAD TH)</td>
+	</tr>
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">data-sortable="true"</td>
+	</tr>
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">This turns a column header into a sortable button (visually - no sorting function). Buttons are embedded and use the arrow up/down icons. You will need to add the logic to sort yourself.</td>
+	</tr>
+</TABLE>
+
+<TABLE cellspacing="2" border="0">
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Config:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">Filter</td>
+	</tr>
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Default value:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">[none]</td>
+	</tr>
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Declare On:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">table</td>
+	</tr>
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Attribute: </td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">data-filter="true"</td>
+	</tr>
+	<tr>
+		<td style="text-align: left; with: 30%; left; font-size: 14px; vertical-align:top;">Info:</td>
+		<td style="text-align: left; width: 70%; font-size: 14px; vertical-align:top;">>Same as in JQM listview. This extension adds a filter element to filter all visible records. Note: The filter will be added in slot 2, so don't put anything there, if you want to use the filter.</td>
 	</tr>
 </TABLE>
 
