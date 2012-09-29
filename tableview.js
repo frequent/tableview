@@ -214,7 +214,10 @@ $.widget( "mobile.tableview", $.mobile.widget, {
 					 
 			 // assign matching "headers" attributes to the associated cells			 
 			 bodyRows.add( tfoot.find("tr, TR") ).each(function(){						
-				var cell = $(this).find("th, td").eq(i);                        
+				var cell = $(this).find("th:not(.notxtchkbx), td").eq(i);                        
+				
+				console.log( cell.attr('class') ); 
+				
 				cell.attr("headers", id);
 				if (classes) { cell.addClass(classes); } else cell.addClass('only');
 			 });     
