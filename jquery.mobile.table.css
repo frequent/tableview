@@ -1,0 +1,41 @@
+/* xxx tables */
+.table-top-wrapper.ui-wrapper-inset {
+	-webkit-border-top-right-radius: inherit;	
+	border-top-right-radius: inherit;
+	-webkit-border-top-left-radius: inherit;
+	border-top-left-radius: inherit;
+}
+
+.table-bottom-wrapper.ui-wrapper-inset {
+  -webkit-border-bottom-right-radius: inherit;	
+	border-bottom-right-radius: inherit;
+	-webkit-border-bottom-left-radius: inherit;
+	border-bottom-left-radius: inherit;
+}
+/* table wrapper */
+.table-top-wrapper, .table-bottom-wrapper 	{ min-height: 25px; width: 100%; vertical-align: middle; border-width: 0px; }
+.table-top-wrapper .ui-btn:not(.ui-input-clear), .table-bottom-wrapper .ui-btn:not(.ui-input-clear)  { margin: 0; border: 0 none; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;}
+.table-top-wrapper .ui-btn .ui-btn-inner:not(.ui-input-clear), .table-bottom-wrapper .ui-btn   .ui-btn-inner:not(.ui-input-clear) { border-top-width: 0px; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none;  box-shadow: none;}
+.table-top-wrapper > div, .table-bottom-wrapper  > div { text-align: center; }
+.table-top-wrapper .ui-table-columntoggle-btn { float: none; }
+.table-top-wrapper .ui-table-columntoggle-btn .ui-btn-inner { padding-top: 9px; padding-bottom: 9px;}
+
+/* alignment */
+.ui-table th, .ui-table td { vertical-align: middle; }
+.ui-table thead th, .ui-table thead td { text-align: center;}
+
+/* sortable buttons */
+.ui-table  thead th { font-weight: normal !important; padding: 0px; }
+.ui-table  thead th a { margin: 0px !important; border-width: 0px !important; height: inherit !important; }
+
+/* multi row header */
+.ui-table thead th[rowspan="2"] a { height: auto; padding: 10px 0; }
+.ui-table  thead th[rowspan="2"] .ui-btn-inner { top: 20%;}
+
+/* filter extension */
+.ui-table-filter { border-width: 0px; vertical-align: middle; background: none !important; display: inline-block; width: 80%; }
+.ui-table-filter  .ui-input-clear { margin: -12px 4px 0 0; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;}
+.ui-table-filter   .ui-input-search { margin: .2em 0;}
+.ui-table-filter-inset { margin: 0;}
+.ui-table-filter input:focus::-webkit-input-placeholder { color:transparent; }
+.ui-table-filter input:focus:-moz-placeholder { color:transparent; }
