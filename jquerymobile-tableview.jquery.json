@@ -1,0 +1,35 @@
+{
+    "name": "jquerymobile-tableview",
+    "title": "jQuery Mobile tableview",
+    "description": "Enhanced tables for jQuery Mobile, filter, multi-row headers, etc.",
+    "keywords": [
+        "jQuery",
+        "Mobile",
+        "Tables"
+    ],
+    "version": "0.2.0",
+    "author": {
+        "name": "Sven Franck",
+        "url": "https://github.com/frequent"
+    },
+    "maintainers": [
+        {
+            "name": "Sven Franck",
+            "email": "svenfranck@yahoo.com",
+            "url": "https://github.com/frequent"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/jquery/jquery-color/blob/2.1.2/MIT-LICENSE.txt"
+        }
+    ],
+    "bugs": "https://github.com/frequent/tableview/issues",
+    "homepage": "http://www.franckreich.de/jqm/tableview/demo.html",
+    "docs": "https://github.com/frequent/tableview/",
+    "dependencies": {
+        "jquery": ">=1.5",
+        "jquery mobile": ">1.2"
+    }
+}
