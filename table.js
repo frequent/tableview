@@ -145,8 +145,6 @@ $.mobile.document.bind( "pagecreate create", function( e ) {
 });
 
 })( jQuery );
-
-})( jQuery );
 //>>excludeStart("jqmBuildExclude", pragmas.jqmBuildExclude);
 });
 //>>excludeEnd("jqmBuildExclude");
