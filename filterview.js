@@ -36,6 +36,7 @@ $.widget("mobile.filterview", $.mobile.widget, {
         val = this.value.toLowerCase(),
         ref = $tag === "table" ? $el.children("tbody") : $el,
         filterItems = null,
+        override = $this.jqmData("overide"),
         lastval = $this.jqmData( "lastval" ) + "",
         childItems = false,
         itemtext = "",
@@ -49,76 +50,77 @@ $.widget("mobile.filterview", $.mobile.widget, {
       }
 
       container._trigger( "beforefilter", "beforefilter", { input: this } );
+      
+      if ( override ) {
+        // Change val as lastval for next execution
+        $this.jqmData( "lastval" , val );
+        if ( isCustomFilterCallback || val.length < lastval.length || val.indexOf( lastval ) !== 0 ) {
 
-      // Change val as lastval for next execution
-      $this.jqmData( "lastval" , val );
-      if ( isCustomFilterCallback || val.length < lastval.length || val.indexOf( lastval ) !== 0 ) {
+          // xxx filter-relate = filter multiple datasets
+          // Custom filter callback applies or removed chars or pasted something totally different, check all items
+            filterItems = o.filterRelate === undefined ? ref.children() :
+                        ref.children().add( $('[data-related="'+relate+'"]').children() );
+        } else {
 
-        // xxx filter-relate = filter multiple datasets
-        // Custom filter callback applies or removed chars or pasted something totally different, check all items
-          filterItems = o.filterRelate === undefined ? ref.children() :
-                      ref.children().add( $('[data-related="'+relate+'"]').children() );
-      } else {
+          // Only chars added, not removed, only use visible subset
+          // xxx filter-relate = filter multiple datasets
+          filterItems = o.filterRelate === undefined ? ref.children( ":not(.ui-screen-hidden)" ) :
+                ref.children( ":not(.ui-screen-hidden)" ).add( $('[data-related="'+relate+'"]')
+                    .children( ":not(.ui-screen-hidden)" ) );
 
-        // Only chars added, not removed, only use visible subset
-        // xxx filter-relate = filter multiple datasets
-        filterItems = o.filterRelate === undefined ? ref.children( ":not(.ui-screen-hidden)" ) :
-              ref.children( ":not(.ui-screen-hidden)" ).add( $('[data-related="'+relate+'"]')
-                  .children( ":not(.ui-screen-hidden)" ) );
-
-        if ( !filterItems.length && o.filterReveal ) {
-          filterItems = ref.children( ".ui-screen-hidden" );
-        }
-      }
-
-      if ( val ) {
-
-        // This handles hiding regular rows without the text we search for
-        // and any list dividers without regular rows shown under it
-        for ( var i = filterItems.length - 1; i >= 0; i-- ) {
-          item = $( filterItems[ i ] );
-          itemtext = item.jqmData( "filtertext" ) || item.text();
-          
-          if ( item.is( "li:jqmData(role=list-divider)" ) ) {
-
-            item.toggleClass( "ui-filter-hidequeue" , !childItems );
-
-            // New bucket!
-            childItems = false;
-
-          } else if ( container.options.filterCallback( itemtext, val, item ) ) {
-
-            //mark to be hidden
-            item.toggleClass( "ui-filter-hidequeue" , true );
-          } else {
-
-            // There's a shown item in the bucket
-            childItems = true;
+          if ( !filterItems.length && o.filterReveal ) {
+            filterItems = ref.children( ".ui-screen-hidden" );
           }
         }
 
-        // Show items, not marked to be hidden
-        filterItems
-          .filter( ":not(.ui-filter-hidequeue)" )
-          .toggleClass( "ui-screen-hidden", false );
+        if ( val ) {
 
-        // Hide items, marked to be hidden
-        filterItems
-          .filter( ".ui-filter-hidequeue" )
-          .toggleClass( "ui-screen-hidden", true )
-          .toggleClass( "ui-filter-hidequeue", false );
+          // This handles hiding regular rows without the text we search for
+          // and any list dividers without regular rows shown under it
+          for ( var i = filterItems.length - 1; i >= 0; i-- ) {
+            item = $( filterItems[ i ] );
+            itemtext = item.jqmData( "filtertext" ) || item.text();
+            
+            if ( item.is( "li:jqmData(role=list-divider)" ) ) {
 
-      } else {
+              item.toggleClass( "ui-filter-hidequeue" , !childItems );
 
-        //filtervalue is empty => show all
-        filterItems.toggleClass( "ui-screen-hidden", !!o.filterReveal );
-      }
-      // xxx filter - only listview
-      if ($tag === "listview") {
-        container._addFirstLastClasses( ref, container._getVisibles( ref, false ), false );
+              // New bucket!
+              childItems = false;
+
+            } else if ( container.options.filterCallback( itemtext, val, item ) ) {
+
+              //mark to be hidden
+              item.toggleClass( "ui-filter-hidequeue" , true );
+            } else {
+
+              // There's a shown item in the bucket
+              childItems = true;
+            }
+          }
+
+          // Show items, not marked to be hidden
+          filterItems
+            .filter( ":not(.ui-filter-hidequeue)" )
+            .toggleClass( "ui-screen-hidden", false );
+
+          // Hide items, marked to be hidden
+          filterItems
+            .filter( ".ui-filter-hidequeue" )
+            .toggleClass( "ui-screen-hidden", true )
+            .toggleClass( "ui-filter-hidequeue", false );
+
+        } else {
+
+          //filtervalue is empty => show all
+          filterItems.toggleClass( "ui-screen-hidden", !!o.filterReveal );
+        }
+        // xxx filter - only listview
+        if ($tag === "listview") {
+          container._addFirstLastClasses( ref, container._getVisibles( ref, false ), false );
+        }
       }
     }
-
     container.options.filterCallback = defaultFilterCallback;
 
     o.filterSlot = $el.jqmData("filter-slot") || 2;

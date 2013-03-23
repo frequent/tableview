@@ -5,7 +5,12 @@ tableview for Jquery Mobile
 
 Demo: [tableview](http://www.franckreich.de/jqm/tableview/demo.html)
 
-version 0.2 - based on JQM 1.3.0 Beta (January 2013)
+version 0.3 - based on JQM 1.3.0 (March 2013)
+
+####New features 0.3
+* added refresh method. Call `$( your table ).table("refresh")`
+* `data-override="true"` disables the default JQM filter
+* fixed multi row header not correctly toggling
 
 ####How to use  
 As JQM now supports tables, this version of tableview is hacked into the current
@@ -14,6 +19,7 @@ JQM widgets. To use it, you just need to replace the following files:
 ##JS  
 tables.js  
 table.columntoggle.js  
+table.reflow.js
 listview.filter.js (optional if you want to use the filter on tables, too)  
 
 ##CSS    
@@ -24,6 +30,7 @@ With the files provided in the repo you can still use both column-toggle and
 reflow mode in tables. Both should continue to work normally. 
 
 In addition the widgets allow to do the following:  
+ 
 **1. Multiple header rows**  
 Currently only working when the split header cells are at the end of the table 
 (still need to fix this).
@@ -88,3 +95,8 @@ filter.
 This will move the filter to the slot specified in the top or bottom container. 
 I will modify this to make this more generic, so you can place the filter where
 ever you want.
+
+**data-override** [0.3 set on table]  
+Setting this parameter will disable the filter completely (vs. customFilterCallback
+using the filter but with custom logic. Use this if you want to update the table
+or listview with dynamic data.

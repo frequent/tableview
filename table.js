@@ -33,11 +33,15 @@ $.widget( "mobile.table", $.mobile.widget, {
   },
 
   _create: function() {
+    var self = this;
+    self.refresh( true );
+  },
 
+  refresh: function (create) {
     var self = this,
       trs = this.element.find( "thead tr" ),
       o = this.options,
-      $table = $( this.element[0] ),				
+      $table = $( this.element[0] ),
       slotsToFill = $table.parent().find(':jqmData(slot="true")'),
       slots, topWrapper, bottomWrapper;
 
@@ -47,55 +51,58 @@ $.widget( "mobile.table", $.mobile.widget, {
     }
 
     if ( o.eventsOnly != false ){
-      // xxx table
-      o.themes.header = $table.jqmData("header") || "c";
-      o.themes.wrapper = $table.jqmData("wrapper") || "a";
-      o.containers.top = $table.jqmData("top-container") || false;
-      o.containers.bottom = $table.jqmData("bottom-container") || false;
-      o.containers.top_grid = $table.jqmData("top-grid") || 3;
-      o.containers.bottom_grid = $table.jqmData("bottom-grid") || 3;
-      o.inset = $table.jqmData( "inset" ) || false;
     
-      if ( !!o.inset ) {
-          this.options.classes.table += " ui-table-inset";
-          // xxx table - corners (not nice, may land on ui-content!);
-          $table.parent().addClass('ui-corner-all');
+      if ( create ) {
+        // xxx table
+        o.themes.header = $table.jqmData("header") || "c";
+        o.themes.wrapper = $table.jqmData("wrapper") || "a";
+        o.containers.top = $table.jqmData("top-container") || false;
+        o.containers.bottom = $table.jqmData("bottom-container") || false;
+        o.containers.top_grid = $table.jqmData("top-grid") || 3;
+        o.containers.bottom_grid = $table.jqmData("bottom-grid") || 3;
+        o.inset = $table.jqmData( "inset" ) || false;
+      
+        if ( !!o.inset ) {
+            this.options.classes.table += " ui-table-inset";
+            // xxx table - corners (not nice, may land on ui-content!);
+            $table.parent().addClass('ui-corner-all');
+        }
+
+        this.element.addClass( this.options.classes.table );
+
+        // xxx table - wrapper and slots
+        if (o.containers.top) {
+          topWrapper = $('<div />')
+            .addClass( 'table-top-wrapper ui-body-'+o.themes.wrapper + ( !!o.inset ? ' ui-wrapper-inset' : '') )
+            .append($.map(new Array( o.containers.top_grid || 3 ), function(){
+                return $('<div/>');
+              }))
+            .grid({ grid: this.options.grid })
+            .insertBefore($table);
+        }
+
+        if (o.containers.bottom) {
+          bottomWrapper = $('<div />')
+            .addClass( 'table-bottom-wrapper ui-body-'+o.themes.wrapper + ( !!o.inset ? ' ui-wrapper-inset' : '' ) )
+            .append($.map(new Array( o.containers.bottom_grid || 3 ), function(){
+                return $('<div/>');
+              }))
+            .grid({ grid: this.options.grid })
+            .insertAfter($table)
+        }
+
+        // xxx table - move slots into grid
+        slots = $('.table-top-wrapper, .table-bottom-wrapper').children('div');
+        for ( var i = 0; i < slotsToFill.length; i++){
+          var currentSlot = slotsToFill.eq(i);
+          currentSlot
+            .find('label')
+              .addClass('ui-hidden-accessible')
+              .end()
+            .appendTo( slots.eq( currentSlot.jqmData("slot-id")-1 ) );
+        };
       }
 
-      this.element.addClass( this.options.classes.table );
-
-      // xxx table - wrapper and slots
-      if (o.containers.top) {
-        topWrapper = $('<div />')
-          .addClass( 'table-top-wrapper ui-body-'+o.themes.wrapper + ( !!o.inset ? ' ui-wrapper-inset' : '') )
-          .append($.map(new Array( o.containers.top_grid ), function(){
-              return $('<div/>');
-            }))
-          .grid({ grid: this.options.grid })
-          .insertBefore($table);
-      }
-
-      if (o.containers.bottom) {
-        bottomWrapper = $('<div />')
-          .addClass( 'table-bottom-wrapper ui-body-'+o.themes.wrapper + ( !!o.inset ? ' ui-wrapper-inset' : '' ) )
-          .append($.map(new Array( o.containers.bottom_grid ), function(){
-              return $('<div/>');
-            }))
-          .grid({ grid: this.options.grid })
-          .insertAfter($table);
-      }
-
-      // xxx table - move slots into grid
-      slots = $('.table-top-wrapper, .table-bottom-wrapper').children('div');
-      for ( var i = 0; i < slotsToFill.length; i++){
-        var currentSlot = slotsToFill.eq(i);
-        currentSlot
-          .find('label')
-            .addClass('ui-hidden-accessible')
-            .end()
-          .appendTo( slots.eq( currentSlot.jqmData("slot-id")-1 ) );	
-      };
-    
       // Expose headers and allHeaders properties on the widget
       // headers references the THs within the first TR in the table
       // xxx tables - add support for 2nd header row 
@@ -108,9 +115,7 @@ $.widget( "mobile.table", $.mobile.widget, {
       var coltally = 0;
 
       trs.each(function(){
-
         var blocktally;
-
         $( this ).children().each(function( i ){
           
           var span = parseInt( $( this ).attr( "colspan" ), 10 ),
@@ -122,19 +127,27 @@ $.widget( "mobile.table", $.mobile.widget, {
           if (span) {
             blocktally = span-1;
           }
-            
+
           if( blocktally > 0){
             blocktally -= 1;
           } else {
+
+          if ( create === undefined ) {
+            $(this).jqmData("cells", "");
+          }
           // Store "cells" data on header as a reference to all cells in the same column as this TH
           // xxx tables = replaced trs.eq(0) with trs )
           $( this )
             .jqmData( "cells", self.element.find( "tr" ).not( trs ).not( this ).children( sel ) );
-
           coltally++;
           }
         });
       });
+    }
+    
+    // update table modes
+    if ( create === undefined ) {
+      this.element.trigger( 'tableupdate' );
     }
   }
 });
